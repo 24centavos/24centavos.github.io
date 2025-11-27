@@ -41,6 +41,7 @@ img.onclick = function() {
   const sonido = document.getElementById("sonido");
 
   conejo.addEventListener("click", () => {
+    sonido.currentTime = 0; // Reinicia el audio cada clic
     sonido.play();
   });
 </script>
