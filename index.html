@@ -4,7 +4,7 @@
   <title>Conejo</title>
 </head>
 <body>
-  <h1>Hola novia hermosa ufgwu </h1>
+  <h1>Hola novia hermosa ubjwu </h1>
   
   <img id="imagen-cambiante" src="img/Conejo1.jpg" width="300" style="cursor:pointer;">
 
@@ -28,9 +28,7 @@ img.onclick = function() {
 };
 </script>
 
-<br><br>
-
-<!-- Segunda imagen que debe reproducir audio -->
+    <!-- Imagen del conejo -->
 <img src="img/Conejo1.jpg" id="conejo" style="width:200px; cursor:pointer;">
 
 <!-- Sonido -->
@@ -43,10 +41,8 @@ img.onclick = function() {
   const sonido = document.getElementById("sonido");
 
   conejo.addEventListener("click", () => {
-    sonido.currentTime = 0; // Reinicia el audio cada clic
     sonido.play();
   });
 </script>
-
 </body>
 </html>
