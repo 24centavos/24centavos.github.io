@@ -5,6 +5,28 @@
 </head>
 <body>
   <h1>Hola novia hermosa</h1>
-  <img src="img/conejo" alt="Conejo" width="300">
+  
+  <img id="imagen-cambiante" src="conejo1" width="300" style="cursor:pointer;">
+
+<script>
+// Lista de imágenes
+const imagenes = ["conejo1", "Conejo2.jpg", "Conejo3.jpg"];
+
+// Guardamos posición inicial
+let indice = 0;
+
+// Seleccionamos la imagen del HTML
+const img = document.getElementById("imagen-cambiante");
+
+// Cuando se hace clic...
+img.onclick = function() {
+    indice++; // paso al siguiente
+    if (indice >= imagenes.length) {
+        indice = 0; // volver al inicio
+    }
+    img.src = imagenes[indice]; // cambiar imagen
+};
+</script>
+  
 </body>
 </html>
