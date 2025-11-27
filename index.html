@@ -26,6 +26,12 @@ img.onclick = function() {
     }
     img.src = imagenes[indice]; // cambiar imagen
 };
+const conejo = document.getElementById("conejo");
+  const sonido = document.getElementById("buni.mp3");
+
+  conejo.addEventListener("click", () => {
+    sonido.play();
+  });
 </script>
 
     <!-- Imagen del conejo -->
@@ -34,13 +40,5 @@ img.onclick = function() {
 <!-- Sonido -->
 <audio id="sonido" src="buni.mp3"></audio>
 
-<script>
-  const conejo = document.getElementById("conejo");
-  const sonido = document.getElementById("buni.mp3");
-
-  conejo.addEventListener("click", () => {
-    sonido.play();
-  });
-</script>
 </body>
 </html>
