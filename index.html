@@ -9,16 +9,16 @@
   <img id="imagen-cambiante" src="img/Conejo1.jpg" width="300" style="cursor:pointer;">
 
 <script>
-// Lista de imágenes
+
 const imagenes = ["img/Conejo1.jpg", "img/Conejo2.jpg", "img/Conejo3.jpg"];
 
-// Guardamos posición inicial
+
 let indice = 0;
 
-// Seleccionamos la imagen del HTML
+
 const img = document.getElementById("imagen-cambiante");
 
-// Cuando se hace clic...
+
 img.onclick = function() {
     indice++; // paso al siguiente
     if (indice >= imagenes.length) {
@@ -30,7 +30,7 @@ img.onclick = function() {
 
 <br><br>
 
-    <!-- Imagen del conejo -->
+    
 <img src="img/conejoboton.jpg" id="conejo" style="width:200px; cursor:pointer;">
 
 <!-- Sonido -->
